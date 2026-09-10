@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مدرسة أم أيمن الثانوية للبنات</title>
+    <meta name="description" content="مدرسة أم أيمن الثانوية للبنات - روابط هامة للطالبات وأولياء الأمور">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts - Arabic -->
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ===== Toolbar (Top) ===== -->
+    <div class="top-toolbar">
+        <div class="container toolbar-inner">
+            <button class="tool-btn" id="editModeBtn" title="تعديل الروابط والعناوين">
+                <i class="fas fa-cog"></i>
+                <span>تعديل الروابط والعناوين</span>
+            </button>
+            <button class="tool-btn" onclick="window.print()" title="طباعة / حفظ PDF">
+                <i class="fas fa-print"></i>
+                <span>طباعة / حفظ PDF</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- ===== Header ===== -->
+    <header>
+        <div class="container header-inner">
+            <div class="logo-box">
+                <img src="logo.png" alt="شعار المدرسة" class="logo" id="schoolLogo"
+                     onerror="this.style.display='none'; document.getElementById('logoFallback').style.display='flex';">
+                <div id="logoFallback" class="logo-fallback">
+                    <i class="fas fa-school"></i>
+                </div>
+            </div>
+            <div class="header-text">
+                <h1>مدرسة أم أيمن الثانوية للبنات</h1>
+                <p class="sub-title">Umm Ayman Secondary Girls School</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== Main Content ===== -->
+    <main class="container">
+
+        <h2 class="section-title">
+            <i class="fas fa-star"></i>
+            روابط هامة للطالبة و ولي الأمر
+            <i class="fas fa-star"></i>
+        </h2>
+
+        <!-- Cards Grid -->
+        <div class="grid" id="linksGrid">
+
+            <a href="#" class="card" style="--card-color: #9C27B0;" data-key="elearning">
+                <div class="card-icon"><i class="fas fa-rocket"></i></div>
+                <span class="card-title">التعليم الإلكتروني</span>
+            </a>
+
+            <a href="#" class="card" style="--card-color: #E91E63;" data-key="weekly">
+                <div class="card-icon"><i class="fas fa-envelope-open-text"></i></div>
+                <span class="card-title">الرسالة الأسبوعية</span>
+            </a>
+
+            <a href="#" class="card" style="--card-color: #673AB7;" data-key="password">
+                <div class="card-icon"><i class="fas fa-key"></i></div>
+                <span class="card-title">تغيير كلمة المرور</span>
+            </a>
+
+            <a href="#" class="card" style="--card-color: #3F51B5;" data-key="schedule">
+                <div class="card-icon"><i class="fas fa-calendar-alt"></i></div>
+                <span class="card-title">الجدول المدرسي</span>
+            </a>
+
+            <a href="#" class="card" style="--card-color: #00ACC1;" data-key="certificates">
+                <div class="card-icon"><i class="fas fa-graduation-cap"></i></div>
+                <span class="card-title">الشهادات والخدمات</span>
+            </a>
+
+            <a href="#" class="card" style="--card-color: #26A69A;" data-key="books">
+                <div class="card-icon"><i class="fas fa-book-open"></i></div>
+                <span class="card-title">الكتب التفاعلية</span>
+            </a>
+
+            <a href="#" class="card" style="--card-color: #7E57C2;" data-key="qatar">
+                <div class="card-icon"><i class="fas fa-user-graduate"></i></div>
+                <span class="card-title">نظام قطر للتعليم</span>
+            </a>
+
+            <a href="#" class="card" style="--card-color: #EC407A;" data-key="timing">
+                <div class="card-icon"><i class="fas fa-clock"></i></div>
+                <span class="card-title">التوزيع الزمني</span>
+            </a>
+
+            <a href="#" class="card" style="--card-color: #5C6BC0;" data-key="contacts">
+                <div class="card-icon"><i class="fas fa-phone-alt"></i></div>
+                <span class="card-title">أرقام التواصل</span>
+            </a>
+
+            <a href="#" class="card" style="--card-color: #AB47BC;" data-key="calendar">
+                <div class="card-icon"><i class="fas fa-calendar-check"></i></div>
+                <span class="card-title">التقويم السنوي</span>
+            </a>
+
+            <a href="#" class="card" style="--card-color: #D81B60;" data-key="exams">
+                <div class="card-icon"><i class="fas fa-file-alt"></i></div>
+                <span class="card-title">جدول الاختبارات</span>
+            </a>
+
+            <a href="#" class="card" style="--card-color: #00897B;" data-key="examSubject">
+                <div class="card-icon"><i class="fas fa-book"></i></div>
+                <span class="card-title">مادة الاختبارات</span>
+            </a>
+
+        </div>
+
+        <!-- News Section -->
+        <section class="news-section">
+            <h2 class="news-title">
+                <i class="fas fa-newspaper"></i>
+                أخبار ومستجدات المدرسة
+            </h2>
+
+            <div class="news-list" id="newsList">
+                <div class="news-item">
+                    <span class="news-date">📅 اليوم</span>
+                    <p>مرحباً بكم في الموقع الرسمي لمدرسة أم أيمن الثانوية للبنات. تابعوا آخر الأخبار والمستجدات هنا.</p>
+                </div>
+                <div class="news-item">
+                    <span class="news-date">📅 هذا الأسبوع</span>
+                    <p>بدء التسجيل للفصل الدراسي الجديد. يرجى من أولياء الأمور متابعة الرسائل الأسبوعية.</p>
+                </div>
+            </div>
+
+            <button class="add-news-btn" id="addNewsBtn">
+                <i class="fas fa-plus-circle"></i>
+                إضافة خبر/مستجد جديد
+            </button>
+        </section>
+
+    </main>
+
+    <!-- ===== Footer ===== -->
+    <footer>
+        <div class="container footer-inner">
+            <p class="principal">مديرة المدرسة: <strong>أ. فاطمة الكواري</strong></p>
+            <p class="copyright">© <span id="year"></span> مدرسة أم أيمن الثانوية للبنات - جميع الحقوق محفوظة</p>
+        </div>
+    </footer>
+
+    <!-- ===== Edit Mode Modal ===== -->
+    <div class="modal-overlay" id="editModal">
+        <div class="modal">
+            <div class="modal-header">
+                <h3><i class="fas fa-edit"></i> تعديل الروابط والعناوين</h3>
+                <button class="close-btn" id="closeModal"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+                <p class="modal-hint">يمكنك تعديل اسم المدرسة، اسم المديرة، ورابط كل بطاقة.</p>
+
+                <label>اسم المدرسة</label>
+                <input type="text" id="inputSchoolName" placeholder="اسم المدرسة">
+
+                <label>اسم المديرة</label>
+                <input type="text" id="inputPrincipal" placeholder="اسم المديرة">
+
+                <h4>روابط البطاقات</h4>
+                <div id="linksEditor"></div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn-cancel" id="cancelEdit">إلغاء</button>
+                <button class="btn-save" id="saveEdit">حفظ التغييرات</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
